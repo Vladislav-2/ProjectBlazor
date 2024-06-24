@@ -1,0 +1,25 @@
+﻿@page "/mycomponent"
+
+<h3>Mój komponent</h3>
+
+<p>To jest przykładowy komponent Blazor WebAssembly.</p>
+
+<img src="https://example.com/image.jpg" alt="Przykładowy obraz" />
+
+<h4>Lista rzeczy do zrobienia:</h4>
+<ul>
+    @foreach (var item in TodoItems)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+@code {
+    private List<string> TodoItems = new List<string>
+    {
+        "Ucz się Blazora",
+        "Stwórz nową aplikację",
+        "Wdróż aplikację na platformie Azure"
+    };
+}
+
